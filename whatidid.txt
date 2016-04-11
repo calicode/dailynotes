@@ -1,0 +1,21 @@
+What I did today to improve at Javascript programming. 
+
+Fri Apr 08
+120m Modified my local weather codepen app to use angular and pull a 5 day forecast. http://codepen.io/calicode/pen/qZpVNW
+
+Sat Apr 09
+15m Reviewed bookmarks collected recently from podcasts/meetups etc. 
+120m Read 100 pages of "Eloquent Javascript" By Marijn Haverbeke
+
+Sun Apr 10
+
+30m Tried watching the second Angular course on code-school. It jumped into building
+the app too much and even after pulling in the github repo I felt really lost. 
+
+30m Started the code-school node.js course 
+
+Mon Apr 11 17:16:03 CDT 2016
+55m Watched the second half of Douglas Crockford:The Javascript Programming Language on youtube
+60m Spent 1 hour on the code-school node.js course
+10m Setup a github repo to store this note and get used to git. 
+
