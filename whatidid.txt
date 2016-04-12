@@ -1,21 +1,31 @@
 What I did today to improve at Javascript programming. 
 
 Fri Apr 08
-120m Modified my local weather codepen app to use angular and pull a 5 day forecast. http://codepen.io/calicode/pen/qZpVNW
+
+120m Refactored my local weather codepen app to use angular and pull a 5 day forecast. http://codepen.io/calicode/pen/qZpVNW
 
 Sat Apr 09
+
 15m Reviewed bookmarks collected recently from podcasts/meetups etc. 
-120m Read 100 pages of "Eloquent Javascript" By Marijn Haverbeke
+120m Read 100 pages of "Eloquent Javascript" By Marijn Haverbeke. Got a bit lost on the sections regarding phi coefficients but understood the js pieces. Did all the example exercises (fizzbuzz, chess board etc). 
+
 
 Sun Apr 10
 
 30m Tried watching the second Angular course on code-school. It jumped into building
-the app too much and even after pulling in the github repo I felt really lost. 
+the app too much and even after pulling in the github repo I felt really lost. Setup basic repo for this project and learned how to pull it from both my laptop and cloud9. 
 
-30m Started the code-school node.js course 
+
+15m Looked into node js course on code school along with react offerings. Also added vue.js to my list of things to look at. Need to focus on 1 framework. 
+55m Watched the first half of Douglas Crockford:The Javascript Programming Language on youtube
 
 Mon Apr 11 17:16:03 CDT 2016
-55m Watched the second half of Douglas Crockford:The Javascript Programming Language on youtube
-60m Spent 1 hour on the code-school node.js course
 10m Setup a github repo to store this note and get used to git. 
+
+55m Watched the second half of Douglas Crockford:The Javascript Programming Language on youtube
+
+60m  Code-school node.js course. 
+Section 1 - setting up basic hello world server using http.createServer. 
+Section 2 - Event loop basics, event emitters. Setting up multiple event listeners for one object
+Section 3 - Streamd and using input.pipe(output) to simplify reads/writes. Can be used to pull data from stream to save to file. Create a simple upload script which writes a file passed to it through request and displays percentage completion. 
 
