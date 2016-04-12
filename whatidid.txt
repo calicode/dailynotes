@@ -29,3 +29,8 @@ Section 1 - setting up basic hello world server using http.createServer.
 Section 2 - Event loop basics, event emitters. Setting up multiple event listeners for one object
 Section 3 - Streamd and using input.pipe(output) to simplify reads/writes. Can be used to pull data from stream to save to file. Create a simple upload script which writes a file passed to it through request and displays percentage completion. 
 
+Tue Apr 12
+
+45m(lunch)- Code-school node.js course. 
+Section 4 - Modules. Learned basic exporting of modules which looks just like javascript. refrsher on package.json and npm. semantic versioning. 
+Section 5 - Express. Learned about setting up basic routes and making a simple twitter request. 
