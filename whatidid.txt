@@ -34,3 +34,5 @@ Tue Apr 12
 45m(lunch)- Code-school node.js course. 
 Section 4 - Modules. Learned basic exporting of modules which looks just like javascript. refrsher on package.json and npm. semantic versioning. 
 Section 5 - Express. Learned about setting up basic routes and making a simple twitter request. 
+105m - Code-school node.js course
+Section 5 - Refactored code from video to use wikipedia api because twitter api requires auth and tying mobile phone. Setup basic template view using ejs, figured out using foreach on an object won't work. I should know that. Tried setting up for in but ejs is throwing a fit. Will look at it tomorrow. 
