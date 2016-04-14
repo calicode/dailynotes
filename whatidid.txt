@@ -36,3 +36,15 @@ Section 4 - Modules. Learned basic exporting of modules which looks just like ja
 Section 5 - Express. Learned about setting up basic routes and making a simple twitter request. 
 105m - Code-school node.js course
 Section 5 - Refactored code from video to use wikipedia api because twitter api requires auth and tying mobile phone. Setup basic template view using ejs, figured out using foreach on an object won't work. I should know that. Tried setting up for in but ejs is throwing a fit. Will look at it tomorrow. 
+
+
+Wed Apr 13
+Lunch
+45m- Code-school node.js course.
+Section 5 - finished section. 
+
+After work 
+150m
+Fixed node wiki search app found under hello_dog.js in my other repos. problem was a syntax error with ejs. 
+Code-school node.js course
+Section 6 - socket.io. Learned how to make a basic chat server, once I saw how it worked I implemented storing nicknames and sending them to clients, still not working 100% but its ok for now. Really digging socket.io. Had a small hiccup where I listened to the wrong object server and my html would not recognize socket.io.js. 
