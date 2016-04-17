@@ -62,4 +62,11 @@ Worked on finishing twitch streamer (http://codepen.io/calicode/pen/dMVGBE) disp
 
 
 Sat Apr 16
-60m Code-school node.js soup to bits webcast. Went over building an spa
+30m Code-school node.js soup to bits webcast. 
+
+Sun Apr 17
+120m -LEARNYOUNODE program filtered ls,make it modular, http client sections complete.
+
+120m - Learnyounode program - async http client section, date microservice, finished fileserver, started http uppercas but not sure how to send post using netcat or something 
+
+
