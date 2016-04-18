@@ -119,16 +119,63 @@ fileStream.pipe(response);
 server.listen(process.argv[2]);
 console.log("server listening on", process.argv[2]);
 
-*/
+HTTP uppercaser 
 
 
 var http = require('http');
-
+var dataToSend = "";
 var server = http.createServer((req,response)=> {
+    
+    req.on('data', (chunk)=>{
+    dataToSend += chunk.toString().toUpperCase();    
+    });
+    
+    req.on('end', ()=>{
+       response.end(dataToSend);
+    });
 
-     req.toString().toUpperCase().pipe(response);
+    
  
 
     
+});
+server.listen(process.argv[2]);
+
+*/
+
+var urlParse ={};
+var http = require('http');
+var url = require('url');
+var dateRes;
+var dateRegexp = new RegExp('(\\d\\d):(\\d\\d):(\\d\\d)','g');
+var dateJSON = "";
+
+var server = http.createServer((req,response)=> {
+
+urlParse = url.parse(req.url,true);
+ console.log(urlParse);
+
+response.writeHead(200, { 'Content-Type': 'application/json' });
+
+if (urlParse.path.toString().toUpperCase().includes("PARSETIME")) { 
+
+// makes a new date object, then pulls out the hh:mm:ss, then turns it into a string. 
+dateRes = new Date(urlParse.query.iso).match(dateRegexp).toString();
+//console.log(dateRes);
+// + in front of the slice turns them into numbers, same as doing Number(datRes.slice) afaik
+dateJSON = {'hour':+dateRes.slice(0,2),'minute':+dateRes.slice(3,5),'second':+dateRes.slice(6,8)};
+/*console.log(dateJSON);
+console.log(JSON.stringify(dateJSON));
+console.log(dateRes.slice(0,2));
+console.log(dateRes.slice(3,5));
+console.log(dateRes.slice(6,8));
+//console.log(typeof(dateRes.match(dateRegexp)));
+  */
+ //console.log(JSON.stringify(dateJSON));
+ response.end(JSON.stringify(dateJSON)); 
+}
+  
+
+  
 });
 server.listen(process.argv[2]);

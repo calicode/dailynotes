@@ -67,6 +67,12 @@ Sat Apr 16
 Sun Apr 17
 120m -LEARNYOUNODE program filtered ls,make it modular, http client sections complete.
 
-120m - Learnyounode program - async http client section, date microservice, finished fileserver, started http uppercas but not sure how to send post using netcat or something 
+120m - Learnyounode program - async http client section, date microservice, finished fileserver, cdstarted http uppercas but not sure how to send post using netcat or something making this hard to troubleshoot. Might just write a seperate program to do it. 
 
 
+
+Mon Apr 18
+Lunch
+35m - Learnyou node - finished http uppercaser without using thought-map, yay. Started last challenge which builds an http service that handles multiple routes and spits out jsonified dates or epoch time depending on request url. Already figured out the multiple routes, reading the utc date from request url. Just working on a regexp to pull hh:dd:mm from the date string. 
+
+start 5pm
