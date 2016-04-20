@@ -88,4 +88,7 @@ Finished expressworks. Last chapters were easy, convert paramters on a get reque
 
 break 6:45
 
+Wed Apr 20
+Lunch -40m
+Stream adventures module - got the first 4, stuck on one because its displaying newlines as \n. Reading through2 docs. might be something with streams in general
 
