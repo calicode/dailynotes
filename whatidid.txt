@@ -1,16 +1,16 @@
 What I did today to improve at Javascript programming. 
 
-Fri Apr 08
+Fri Apr 08 120m total
 
 120m Refactored my local weather codepen app to use angular and pull a 5 day forecast. http://codepen.io/calicode/pen/qZpVNW
 
-Sat Apr 09
+Sat Apr 09 145m total
 
 15m Reviewed bookmarks collected recently from podcasts/meetups etc. 
 120m Read 100 pages of "Eloquent Javascript" By Marijn Haverbeke. Got a bit lost on the sections regarding phi coefficients but understood the js pieces. Did all the example exercises (fizzbuzz, chess board etc). 
 
 
-Sun Apr 10
+Sun Apr 10 140m total
 
 30m Tried watching the second Angular course on code-school. It jumped into building
 the app too much and even after pulling in the github repo I felt really lost. Setup basic repo for this project and learned how to pull it from both my laptop and cloud9. 
@@ -19,7 +19,7 @@ the app too much and even after pulling in the github repo I felt really lost. S
 15m Looked into node js course on code school along with react offerings. Also added vue.js to my list of things to look at. Need to focus on 1 framework. 
 55m Watched the first half of Douglas Crockford:The Javascript Programming Language on youtube
 
-Mon Apr 11 17:16:03 CDT 2016
+Mon Apr 11 17:16:03 CDT 2016 125m total
 10m Setup a github repo to store this note and get used to git. 
 
 55m Watched the second half of Douglas Crockford:The Javascript Programming Language on youtube
@@ -29,7 +29,7 @@ Section 1 - setting up basic hello world server using http.createServer.
 Section 2 - Event loop basics, event emitters. Setting up multiple event listeners for one object
 Section 3 - Streamd and using input.pipe(output) to simplify reads/writes. Can be used to pull data from stream to save to file. Create a simple upload script which writes a file passed to it through request and displays percentage completion. 
 
-Tue Apr 12
+Tue Apr 12 150m total
 
 45m(lunch)- Code-school node.js course. 
 Section 4 - Modules. Learned basic exporting of modules which looks just like javascript. refrsher on package.json and npm. semantic versioning. 
@@ -38,7 +38,7 @@ Section 5 - Express. Learned about setting up basic routes and making a simple t
 Section 5 - Refactored code from video to use wikipedia api because twitter api requires auth and tying mobile phone. Setup basic template view using ejs, figured out usinbg foreach on an object won't work. I should know that. Tried setting up for in but ejs is throwing a fit. Will look at it tomorrow. 
 
 
-Wed Apr 13
+Wed Apr 13 195m total
 Lunch
 45m- Code-school node.js course.
 Section 5 - finished section. 
@@ -50,7 +50,7 @@ Code-school node.js course
 Section 6 - socket.io. Learned how to make a basic chat server, once I saw how it worked I implemented storing nicknames and sending them to clients, still not working 100% but its ok for now. Really digging socket.io. Had a small hiccup where I listened to the wrong object server and my html would not recognize socket.io.js. 
 
 
-Thur Apr 14
+Thur Apr 14 285m total
 Lunch
 45m - Code-School node.js course.
 Section 7 - persisting data with redis. 
@@ -61,18 +61,31 @@ Worked on finishing twitch streamer (http://codepen.io/calicode/pen/dMVGBE) disp
 240m - Got to code meetup 2h early and spent the time messing with angular. Finally fixed twitch tv app, i had the same controller called twice so it was causing scope issues. just need to pretty it up a bit. 
 
 
-Sat Apr 16
+Sat Apr 16 30m total
 30m Code-school node.js soup to bits webcast. 
 
-Sun Apr 17
+Sun Apr 17 -240m total
 120m -LEARNYOUNODE program filtered ls,make it modular, http client sections complete.
 
 120m - Learnyounode program - async http client section, date microservice, finished fileserver, cdstarted http uppercas but not sure how to send post using netcat or something making this hard to troubleshoot. Might just write a seperate program to do it. 
 
 
 
-Mon Apr 18
+Mon Apr 18 150m total
 Lunch
+
 35m - Learnyou node - finished http uppercaser without using thought-map, yay. Started last challenge which builds an http service that handles multiple routes and spits out jsonified dates or epoch time depending on request url. Already figured out the multiple routes, reading the utc date from request url. Just working on a regexp to pull hh:dd:mm from the date string. 
 
-start 5pm
+115m - Finished learnyounode. Figured out regexp for pulling date, was pretty close before I put it into regexp101, just needed more slashes. This seems to be the solution to regexp problems a decent amount of the time. Worked with date objects and slicing parts out. I really liked this course and will start either the stream version or express next. 
+    Did first 3 parts of expressworks, basic setup and using jade templating engine. 
+    
+
+Tue Apr 19 85m
+Lunch - 40m Expressworks - reading from form submit post request and stylish css which used the stylus npm module. 
+
+start 6pm
+Finished expressworks. Last chapters were easy, convert paramters on a get request to json and return. then read a local file, parse to json and send back
+
+break 6:45
+
+
