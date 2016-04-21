@@ -92,3 +92,4 @@ Wed Apr 20
 Lunch -40m
 Stream adventures module - got the first 4, stuck on one because its displaying newlines as \n. Reading through2 docs. might be something with streams in general
 
+Night - attended chicago node meeting. Talk on callback less async. Es6 features. 
