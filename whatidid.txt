@@ -64,6 +64,7 @@ Worked on finishing twitch streamer (http://codepen.io/calicode/pen/dMVGBE) disp
 Sat Apr 16 30m total
 30m Code-school node.js soup to bits webcast. 
 
+
 Sun Apr 17 -240m total
 120m -LEARNYOUNODE program filtered ls,make it modular, http client sections complete.
 
@@ -88,8 +89,28 @@ Finished expressworks. Last chapters were easy, convert paramters on a get reque
 
 break 6:45
 
-Wed Apr 20
+Wed Apr 20 total 130m
 Lunch -40m
 Stream adventures module - got the first 4, stuck on one because its displaying newlines as \n. Reading through2 docs. might be something with streams in general
 
-Night - attended chicago node meeting. Talk on callback less async. Es6 features. 
+Night - attended chicago node meeting. Talk on callback less async. Es6 features. Already used promises a few times, need to read more. Added some new terms to look up such as flow control and contract fulfillment. 
+
+Thur Apr 21 total 20m
+Lunch 20 mins - Stream adventures - just needed to add newline char to string being pushed. Finished next module which used stream-concat to buffer input from stdin, then reverse and output to stdout
+
+Fri Apr 22 60m - express building blocks course
+
+
+Sat apr 23 total 235m 
+Code-school Finished express building blocks course. Basic routing, using app.params to massage data before passing it along to route handler. Using routers and chaining handling different request types. Using app.all in place of app.params. Modularizing routes and supporting functions so they can just be used as middleware from the main server.js 
+
+
+Sun Apr 24 total 150m
+Webcast - Soup to bits real time web with node 90m
+Went over building an app using node/express. Modularizing the code into model/view/controller. Learned about pushing errors up the call stack. This is something I need more experience with. He was passing a callback up which had 2 arguments. Used sockets to handle interactions with redis. 
+
+Webcast - Soup To bits building blocks with express js 60m
+Building tests. Setting up git repo right away
+
+npm shrinkwrap locks dependancy versions so the right ones are
+installed during npm install. Used when putting node_modules into .gitignore. Writing tests in mocha doesn't look to bad for basic express apps. Mentioned something called super test 
