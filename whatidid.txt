@@ -114,3 +114,23 @@ Building tests. Setting up git repo right away
 
 npm shrinkwrap locks dependancy versions so the right ones are
 installed during npm install. Used when putting node_modules into .gitignore. Writing tests in mocha doesn't look to bad for basic express apps. Mentioned something called super test 
+
+
+Mon apr 25 180m total
+
+Finished Webcast - Soup to bits building blocks with express.
+
+More building tests, deploying to heroku. Modularizing. VIM might be worth spending the time to learn. Both webcasts
+i've watched used it and they had vastly different configs. Splitting the screen is really nice, also auto completing so that i dont have to type app.get('/',(req,res)=> {}); out every time. I bet theres a learnyouvim type program. 
+
+
+Finished last user story for FreeCodeCamp Twitch.api challenge. http://codepen.io/calicode/pen/dMVGBE Interface is very bland. Need to figure out a better base template I can use for apps.
+
+
+Tue Apr 26
+Lunch 45m
+
+Soup to bits - Shaping up with Angular.js. Should be viewed before doing course I was taking about earlier.
+Learning a lot about using custom directives using the replace parameter, using controllers within a parent controller. 
+
+. Angular seed project starting point for nangularapps
