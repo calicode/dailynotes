@@ -143,3 +143,23 @@ Starting VIM setup. managed to figure out plugin install
 
 
 First FCC backend -timestamp microservice almost complete. Pushed to github and have heroku working as well. One edge case left.
+
+Fri Apr 29 60m
+Start 2pm
+Finished FCC backend - timestamp microservice. https://intense-plateau-25456.herokuapp.com/ https://github.com/calicode/FCCbackend_timestamp
+
+Started daily notes app. Quickly got overwhelmed cloning clementine.js, moving to a local setup which I thought would be easier, then I ran into issues getting vim working locally and the latest mongodb doesn't work on non LTS releases of ubuntu. Might just start program from scratch and integrate passport for auth later. I think the app cloned from clementine is almost ready but still feeling overwhelmed. 
+
+Sat Apr 30 100m
+
+Start 12:50pm
+
+Working through code-school mongodb course
+break 2:30
+
+start 7:15
+Mongo db course
+
+Mon May 2
+
+Lunch 45m Worked through Mongodb course on code-school

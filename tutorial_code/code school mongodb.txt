@@ -1,0 +1,165 @@
+Documents are stored in collections. 
+Document values stored just like json.
+
+
+db commands
+db.help()
+use reviews (creates db or switches)
+show dbs
+db.potions.insert() {"name":"value"}
+
+> db.potions.find()
+{ "_id" : ObjectId("5724f0cc8a84a7e046c6c060"), "name" : "meow", "vendor" : "callie" }
+
+
+> db.potions.find({"yea":"liljohn"})
+{ "_id" : ObjectId("5724f2168a84a7e046c6c061"), "yea" : "liljohn", "sometimes" : "yes" }
+{ "_id" : ObjectId("5724f2528a84a7e046c6c062"), "yea" : "liljohn", "bsonisathing" : "yes" }
+
+"tryDate": new Date (2012,8,13)
+
+
+db.potions.find({ratings.flavor:5});
+
+> db.potions.find({"ratings.strength":5})
+{ "_id" : ObjectId("5724f453a131043a025ede38"), "yea" : "liljohn", "bsonisathing" : "yes", "ratings" : { "strength" : 5 } }
+> 
+
+
+db.potions.update({"name":"Love"},{"$set":{"price": 3.99}})
+
+adding "upsert":true will create document during update 
+if one doesn't exist
+
+update by default will only update the first matched record
+need to add {"multi":true} to do all
+
+to remove field from all documents in collection 
+
+db.potions.update(
+{},
+{"$unset":{"color":""}},
+{"multi":true}
+)
+
+to rename field
+db.potions.update(
+{},
+{"$rename":{"score":"grade"}},
+{"multi":true}
+)
+
+if its in an array
+db.potions.update(
+
+{"ingredients":"secret"},
+{"$set":{"ingredients.$":"42"}}, 
+//$ picks up index of matched value will only work on first match
+could probably just rerun the update until it returns no matches
+{"multi":true}
+
+)
+
+
+lots of other update operators $min $max $mult etc, check docs
+
+$addToSet only adds if item doexn't exit already
+
+$pull removes all instances of value from array
+
+
+can ave multiple criteria in query 
+db.potions.find({
+    
+    "vendor":"whatever",
+    "ratings.strength":5
+})
+
+
+Section 3 - QUERY OPERATORS
+
+db.potions.find({
+"price":{"$lt":20, "$gt":5}    
+    
+})
+
+not equal
+
+{"vendor":{"$ne":"brewers"}}
+
+when checking arrays
+Sizes:[5,10,15,45]
+{"sizes": {"$elemMatch": {"$gt": 8, "$lt":16}}
+$lte 
+$gte
+
+projectios and cursors. Will only return name and vendor 
+
+db.potions.find({
+    {"grade":{"$gte":80}}.
+    {"vendor":true, "name":true}
+    
+})
+
+db.potions.find.count(); 
+
+db.potions.find.sort({"price":1})
+
+1 ascending -1 descending
+
+moo,blah,boo,meow,rowr,zip,zoop,zang
+skip(0).limit(3) moo blah boo
+skip(3).limit(3) meow rowr zip
+
+// Section 4 Data modelling
+
+
+
+Normalizing data 
+
+Separating vendor from item info and just referncing vendor from item
+
+
+db.vendors.insert({
+    "_id": "Kettlecooked",
+    "phone" etc etc etc
+    
+})
+
+db.potions.insert({
+    vendor_id:Kettlecooked
+    
+})
+
+
+Embedded documents have the benefit of atomic writes. Either 
+the write operation succeeds for all fields or it doesn't write. 
+
+Referenced documents are good for cutting down on data duplication but requires
+a minimum of 2 queries to get the results and does not supporting atomic writes. 
+
+How often is our data used together
+Always - embedding, sometimes, rarely
+References - sometimes, rarely
+
+Expected sizes (in documents)
+Embedded, less than a hundred, more than a few hundred
+Reference, more than a few hundred, thousands. 
+Embedded might have performance issues with larger data sets
+
+Will the data change often
+Embeded = never/rarely, occasionally
+Reference = occasionally,constantly
+
+
+// Section 5 - Common aggregations
+$sum is an accumulator
+_id:$vendor_id is a group key
+
+db.potions.aggregate(
+    [{"$group": {"_id":"$vendor_id", "total":{"$sum":1},
+    "grade_total":{"$sum":"$grade"    
+    }}
+    
+    
+])
