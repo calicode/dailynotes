@@ -150,16 +150,18 @@ Finished FCC backend - timestamp microservice. https://intense-plateau-25456.her
 
 Started daily notes app. Quickly got overwhelmed cloning clementine.js, moving to a local setup which I thought would be easier, then I ran into issues getting vim working locally and the latest mongodb doesn't work on non LTS releases of ubuntu. Might just start program from scratch and integrate passport for auth later. I think the app cloned from clementine is almost ready but still feeling overwhelmed. 
 
-Sat Apr 30 100m
+Sat Apr 30 120m total 
 
-Start 12:50pm
+Setup mongo on local machine, started code-school mongodb course
 
-Working through code-school mongodb course
-break 2:30
 
-start 7:15
-Mongo db course
+Mon May 2 total 121m
 
-Mon May 2
-
-Lunch 45m Worked through Mongodb course on code-school
+Finished MongoDb course on code school.
+Course covered
+*Db/Collections/Documents model
+*Basic console commands and syntax (find,insert,update)
+*search operators ($min,$max,$gte etc)
+*Embedded documents vs Referenced and their strengths and weaknesses. Embedded should be good for most of my personal projects. 
+*Aggregators and using them to get sorted results
+*typing commands directly into the mongo console is painfull, I think i've typed {"":""} more times in the past day than I have since learning about objects. Can't wait to use a driver in node. 

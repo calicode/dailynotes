@@ -163,3 +163,69 @@ db.potions.aggregate(
     
     
 ])
+
+db.potions.aggregate({
+    {"$group": {
+        "_id": "$vendor_id",
+        "avg_grade":{"$avg": "$grade"}
+        
+    }
+})
+
+
+db.wands.aggregate([{
+  "$group": {"_id":"$maker",
+            "total_wands":{"$sum":1},
+             "max_magic":{"$max":"$damage.magic"},
+             "lowest_price":{"$min":"$price"}
+            }
+  
+  
+}])
+
+
+Aggregation Pipeline data gets passed down pipline sequentially
+stage1>stage2>>>>>>stage39492039
+
+db.potions.aggregate([{
+ //stage 1{"$match":{"ingredients":"unicorn}},
+ //stage 2 {"$group":{
+     "_id":"$vendor_id
+     "potion_count":{"$sum":1}
+     
+ }   
+    
+    
+}])
+
+Add an accumulator with a field named lowest_level 
+that finds the lowest level_required per maker.
+
+
+db.potions.aggregate([{
+$match:price lt 15, // trim down
+$project:id_false vendorid:true grade:true // trim down
+$group: id vendorid,avg_grade:avg($grade)
+$sort: {avg_grade:-1}
+$limit:3
+
+    
+    
+    
+    
+}])
+
+db.wands.aggregate([
+  {"$match": {"powers": "Air Bolt"}},
+  {"$group": {"_id": "$maker", "lowest_level": {"$min": "$level_required"}}}
+] )
+
+
+db.wands.aggregate([
+  {"$match":{"level_required":{"$lte":5}}},
+  {"$project":{"_id":false,"damage.magic":true,"maker":true}},
+  {"$group":{"_id":"$maker", "max_damage":{"$max":"$damage.magic"}}},
+  {"$sort":{"max_damage":-1}},
+  {"$limit":4}
+  
+])
