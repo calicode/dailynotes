@@ -165,3 +165,7 @@ Course covered
 *Embedded documents vs Referenced and their strengths and weaknesses. Embedded should be good for most of my personal projects. 
 *Aggregators and using them to get sorted results
 *typing commands directly into the mongo console is painfull, I think i've typed {"":""} more times in the past day than I have since learning about objects. Can't wait to use a driver in node. 
+
+Tue May 3 285 mins
+Started work on daily notes app for real. Got
+clementine js up and running, added a route for my page, made sure it has to be authenticated.
