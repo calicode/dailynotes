@@ -166,6 +166,36 @@ Course covered
 *Aggregators and using them to get sorted results
 *typing commands directly into the mongo console is painfull, I think i've typed {"":""} more times in the past day than I have since learning about objects. Can't wait to use a driver in node. 
 
-Tue May 3 285 mins
+Tue May 3 220 mins
 Started work on daily notes app for real. Got
 clementine js up and running, added a route for my page, made sure it has to be authenticated.
+
+
+Wed May 4
+
+lunch 45m
+watched last mean stack video 
+
+Thu May 5
+lunch 35m
+worked on daily notes app 
+
+
+Sat May 7
+start 12
+Worked on FCC pomodoro clock
+end 4pm total 240m
+
+Sun May 8 total 200m
+
+Start 12 end 4
+Got pomodoro clock working, learned about setIntervals/timeouts and some more about scope. 
+
+
+Mon May 9 165m
+Lunch 45m Worked on pomodoro timer, watched video on bootstrap
+
+Start 6pm Worked on pomodoro timer. Timer function works fine when dealing with times under a minute but past that it runs into problems. Read a bit about problems with setInterval. 
+    Working on daily progress app. 
+    Finish 8pm - daily progress app can now seend session time and notes to server and the server can output it to console. hurray
+    
